@@ -1,0 +1,21 @@
+pipeline
+{
+agent any
+stages
+{
+stage('check validate') {
+steps{
+techno 'validating the program'
+}
+}
+stage('complitation'){steps{
+echo 'compiling the program'
+}
+}
+stage('display'){
+step{
+echo 'deploying the program'
+}
+}
+}
+}
